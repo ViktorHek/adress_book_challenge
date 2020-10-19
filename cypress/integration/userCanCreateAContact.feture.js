@@ -1,6 +1,7 @@
 
 describe("user can create a contact", () => {
-    instanceof("test", () => {
-        crypto.visit("http://localhost:3001")
+    it("test", () => {
+        cy.visit("http://localhost:3002")
+        cy.get("#add-contact").click()
     })
 })
