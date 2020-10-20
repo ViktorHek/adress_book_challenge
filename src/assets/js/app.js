@@ -5,7 +5,7 @@ const renderContacts = () => {
 
     let div = document.querySelector("#contact-list")
     if (contacts) {
-        div.innerHTML = ""
+        div.innerHTML = ''
         const ul = document.createElement("ul")
 
         contacts.forEach(contact => {
@@ -16,8 +16,9 @@ const renderContacts = () => {
               <span>${contact.email}</span> |
               <span>${contact.phone}</span>
               `
-        ul.appendChild(li)
+         ul.appendChild(li)
         })
+
         div.appendChild(ul)
     } else {
         div.innerHTML = "<p>You have no contacts in your address book</p>"
@@ -31,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
     contactForm.style.display = "none"
 
     toggleFromVisibilityButton.addEventListener("click", () => {
-        if (contactForm.style.display === " ") {
+        if (contactForm.style.display === "") {
             contactForm.style.display = "none"
         } else {
-            contactForm.style.display = " "
+            contactForm.style.display = ""
         }
     })
 

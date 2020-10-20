@@ -13,10 +13,10 @@ describe("user can create a contact", () => {
     }) 
 
     it("displays a name of the new contact", () => {
-        cy.get("contact-list").should("contain", "Thomas")
+        cy.get("#contact-list").should("contain", "Thomas")
     })
 
     it("displays the phone number of the new contact", () => {
-        cy.get("contact-list").should("contain", "0700 101010")
+        cy.get("#contact-list").should("contain", "0700 101010")
     })
 })
