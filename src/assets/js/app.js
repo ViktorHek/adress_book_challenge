@@ -5,7 +5,7 @@ const renderContacts = () => {
 
     let div = document.querySelector("#contact-list")
     if (contacts) {
-        div.innerHTML = " "
+        div.innerHTML = ""
         const ul = document.createElement("ul")
 
         contacts.forEach(contact => {
@@ -65,3 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset()
     })
 })
+
+
+
